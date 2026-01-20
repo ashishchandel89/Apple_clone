@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 280px;
+    height: 370px;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 5px 3px 5px rgb(100, 99, 99);
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.card img{
+    width: 300px;
+    height:370px;
+    object-fit: cover;
+    border-radius: 15px;
+    flex-shrink: 0;
+   
+}
+.card .bottom{
+    width:280px;
+    height:90px;
+    position: absolute;
+    bottom: -90px;
+    background: linear-gradient(transparent,rgba(0, 0, 0, 0.529));
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: aliceblue;
+    align-items: center;
+
+}
+.card:hover .bottom{
+    cursor: pointer;
+    bottom: 0;
+    transition: all ease 0.9s;
+}
+.card:hover {
+      transform:rotate(2deg);
+      transition: all ease 2s;
+}
+ 
+#headline{
+    display:flex;
+
+}
+#headline> h1{
+    font-size: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-top: 30px;
+    color: transparent;
+     
+    background-image:url("https://images.unsplash.com/photo-1666896579724-996900b80cca?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGxpb24lMjBwb3RyYWl0fGVufDB8fDB8fHww");
+    background-clip: text;
+    background-size: cover;
+}
+ 
+#headline h2{
+    font-size: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-top: 30px;
+     color: transparent;
+  
+     background-image: url("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWM0bmMzdG55MWhibzh4YjZ3b2dlODgxdjJkam81ZWV1NWd1MnRtMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l1BUojJe4cno1U0CgL/giphy.webp");
+     background-clip: text;
+     background-size: cover;
+}

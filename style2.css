@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    font-family: myfontsemibold;
+    background-color: #f4f4f4;
+    color: white;
+    line-height: 1.6;
+    
+}
+
+#parent{
+    width: 100%;
+    height:100%;
+    background-color: lightblue;
+    padding:20px;
+}
+
+
+#child{
+   width:100%;
+   height: 100%;
+   display:flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow: auto;
+}
+.card{ 
+    width:350px;
+    height: 440px;
+    background-color: #f4f4f4;
+    border:none;
+    border-radius: 15px;
+    box-shadow: 7px 5px 20px rgba(0, 0, 0, 0.415);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   gap:6px;
+    flex-shrink: 0;
+  margin-bottom: 30px;
+}
+
+.card img{
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+  object-fit: cover;
+}
+
+.card h1{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color:rgba(0, 0, 0, 0.881);
+    padding-left: 20px;
+}
+
+.card p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color:rgba(0, 0, 0, 0.596);
+    padding-left: 0px;
+    text-align: center;
+    padding-right: 0px;
+
+    
+}
+
+.card button{
+    padding:10px 40px;
+    font-size: 18px;
+    background-color: rgba(19, 74, 240, 0.851);
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.card button:hover{
+    color: rgba(19, 74, 240, 0.851);
+    background-color: white;
+    border: 2px solid rgba(19, 74, 240, 0.851);
+
+
+}
+#parent  ::-webkit-scrollbar-thumb{
+    background-color:red;
+}
